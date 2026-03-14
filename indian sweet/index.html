@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shahi Mithai | Premium Indian Sweets</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <h1 class="logo">Shahi<span>Mithai</span></h1>
+            <ul class="nav-links">
+                <li><a href="#" data-target="home" class="active">Home</a></li>
+                <li><a href="#" data-target="sweets">Our Sweets</a></li>
+                <li><a href="#" data-target="about">About Us</a></li>
+                <li><a href="#" data-target="contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <section id="home" class="page-section active-page">
+            <header class="hero">
+                <div class="hero-content reveal">
+                    <h2>Experience Royal Sweetness</h2>
+                    <p>Handcrafted Indian delicacies made with pure desi ghee, premium dry fruits, and generations of love.</p>
+                    <button class="btn-primary" onclick="document.querySelector('[data-target=\'sweets\']').click()">Order Now</button>
+                </div>
+            </header>
+
+            <section class="counters reveal">
+                <div class="counter-box">
+                    <h3 class="counter" data-target="50">0</h3><span>+</span>
+                    <p>Years of Legacy</p>
+                </div>
+                <div class="counter-box">
+                    <h3 class="counter" data-target="120">0</h3><span>+</span>
+                    <p>Varieties of Sweets</p>
+                </div>
+                <div class="counter-box">
+                    <h3 class="counter" data-target="100">0</h3><span>k+</span>
+                    <p>Happy Customers</p>
+                </div>
+            </section>
+
+            <section class="offers reveal">
+                <div class="offer-banner">
+                    <div class="offer-text">
+                        <h3>Festive Special Offer</h3>
+                        <p>Get 20% off on all assorted gift boxes this Diwali season.</p>
+                    </div>
+                    <button class="btn-secondary">Claim Offer</button>
+                </div>
+            </section>
+        </section>
+
+        <section id="sweets" class="page-section">
+            <div class="section-header reveal">
+                <h2>Our Premium Menu</h2>
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="milk">Milk Sweets</button>
+                    <button class="filter-btn" data-filter="dryfruit">Dry Fruit</button>
+                    <button class="filter-btn" data-filter="festival">Festival Specials</button>
+                </div>
+            </div>
+
+            <div class="products-grid reveal">
+                <div class="product-card" data-category="milk festival">
+                    <div class="img-container">
+                        <img src="https://images.unsplash.com/photo-1605197132342-9856ccbb2df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Gulab Jamun">
+                    </div>
+                    <div class="product-info">
+                        <h3>Royal Gulab Jamun</h3>
+                        <p>Soft cottage cheese dumplings soaked in rose-cardamom syrup.</p>
+                        <div class="price-row">
+                            <span class="price">₹450 / kg</span>
+                            <button class="add-cart"><i class="fas fa-shopping-bag"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="dryfruit">
+                    <div class="img-container">
+                        <img src="https://images.unsplash.com/photo-1599813137685-3b02d6850c90?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Kaju Katli">
+                    </div>
+                    <div class="product-info">
+                        <h3>Premium Kaju Katli</h3>
+                        <p>Diamond-shaped cashew fudges covered in pure edible silver foil.</p>
+                        <div class="price-row">
+                            <span class="price">₹1050 / kg</span>
+                            <button class="add-cart"><i class="fas fa-shopping-bag"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="milk">
+                    <div class="img-container">
+                        <img src="https://images.unsplash.com/photo-1626804475297-4160aae01bc4?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Rasgulla">
+                    </div>
+                    <div class="product-info">
+                        <h3>Bengali Rasgulla</h3>
+                        <p>Spongy, melt-in-the-mouth cottage cheese balls in light sugar syrup.</p>
+                        <div class="price-row">
+                            <span class="price">₹400 / kg</span>
+                            <button class="add-cart"><i class="fas fa-shopping-bag"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="festival">
+                    <div class="img-container">
+                        <img src="https://images.unsplash.com/photo-1627038161556-91edde4ec9dc?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Jalebi">
+                    </div>
+                    <div class="product-info">
+                        <h3>Saffron Jalebi</h3>
+                        <p>Crispy, golden spirals soaked in rich saffron syrup.</p>
+                        <div class="price-row">
+                            <span class="price">₹350 / kg</span>
+                            <button class="add-cart"><i class="fas fa-shopping-bag"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="festival dryfruit">
+                    <div class="img-container">
+                        <img src="https://images.unsplash.com/photo-1605807646983-377bc5a76493?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Motichoor Laddu">
+                    </div>
+                    <div class="product-info">
+                        <h3>Motichoor Laddu</h3>
+                        <p>Fine gram flour pearls bound with pure ghee and dry fruits.</p>
+                        <div class="price-row">
+                            <span class="price">₹600 / kg</span>
+                            <button class="add-cart"><i class="fas fa-shopping-bag"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="milk dryfruit">
+                    <div class="img-container">
+                        <img src="https://images.unsplash.com/photo-1635508848035-716447c406ee?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Pista Barfi">
+                    </div>
+                    <div class="product-info">
+                        <h3>Pista Barfi</h3>
+                        <p>Rich, creamy milk fudge loaded with premium Iranian pistachios.</p>
+                        <div class="price-row">
+                            <span class="price">₹950 / kg</span>
+                            <button class="add-cart"><i class="fas fa-shopping-bag"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="page-section">
+            <div class="about-container reveal">
+                <div class="about-text">
+                    <h2>Our Heritage</h2>
+                    <p>Founded in 1976, Shahi Mithai began as a small shop in the heart of the city. Today, we are proud to be the most trusted name in premium Indian confectionery.</p>
+                    <p>Our Head Halwai, Master Chef Ram Prakash, brings 40 years of expertise, ensuring every piece of sweet carries the authentic taste of tradition.</p>
+                    <ul class="trust-list">
+                        <li><i class="fas fa-check-circle"></i> 100% Pure Desi Ghee</li>
+                        <li><i class="fas fa-check-circle"></i> No Artificial Preservatives</li>
+                        <li><i class="fas fa-check-circle"></i> Premium Sourced Ingredients</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1558235221-70ee5f7e77b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Making Sweets">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="page-section">
+            <div class="contact-wrapper reveal">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>Place an order or drop by our flagship store for a tasting.</p>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>123 Heritage Walk, Royal Avenue, New Delhi, 110001</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <p>+91 98765 43210</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <p>Mon - Sun: 8:00 AM - 10:00 PM</p>
+                    </div>
+                    <a href="https://wa.me/919876543210" target="_blank" class="whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                    </a>
+                </div>
+                <div class="contact-form">
+                    <form onsubmit="event.preventDefault(); alert('Message Sent Successfully!');">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="tel" placeholder="Phone Number" required>
+                        <textarea rows="5" placeholder="Your Message or Order Details" required></textarea>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h2>Shahi<span>Mithai</span></h2>
+                <p>Crafting celebrations since 1976.</p>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 Shahi Mithai. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
